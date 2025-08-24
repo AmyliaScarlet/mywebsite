@@ -1,0 +1,6 @@
+<!-- templates/hero.asth -->
+<div class="hero-content">
+    <h1>{{site.slogan}}</h1>
+    <p>{{site.description}}</p>
+    <a href="#mobile" class="cta-button">探索我的作品集</a>
+</div>

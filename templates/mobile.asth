@@ -1,0 +1,27 @@
+<div class="series-section" ast-for="seriesItem in series">
+    <div class="series-title">
+        <h3>{{seriesItem.name}}</h3>
+        <div class="tag">{{seriesItem.tag}}</div>
+    </div>
+    
+    <div class="products-grid">
+        <div class="product-card" ast-for="product in seriesItem.products">
+            <div class="card-header">
+                <h3>{{product.name}}</h3>
+                <div class="card-tags">
+                    <div class="tag {{tag.class}}" ast-for="tag in product.tags">
+                        {{tag.text}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>{{product.description}}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{{product.github}}" class="github-link">
+                    <i class="fab fa-github"></i> GitHub仓库
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="footer-content">
+    <h3>联系与合作</h3>
+    <p>{{site.contactText}}</p>
+    
+    <div class="contact-links">
+        <a ast-for="link in social" href="{{link.href}}">
+            <i class="{{link.icon}}"></i>
+        </a>
+    </div>
+    
+    <p class="copyright">{{site.copyright}}</p>
+</div>

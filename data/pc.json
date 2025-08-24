@@ -1,0 +1,99 @@
+{
+    "sectionTitle": "PC应用作品",
+    "sectionDescription": "ASPower系列桌面应用，提高工作效率和处理能力",
+    "series": [
+        {
+            "name": "ASPower系列",
+            "tag": "专业应用",
+            "products": [
+                {
+                    "name": "AmyFRP",
+                    "description": "家庭资源管理系统，记录事务、财务收支和多媒体信息，结合AI实现数据统计、规划建议和未来预测。",
+                    "tags": [
+                        {"class": "web", "text": "Web系统"},
+                        {"text": "家庭管理"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyPDFwiz",
+                    "description": "PDF编辑工具，满足PDF文档的各类编辑需求，实现Word与PDF无缝转换，随时编辑传输。",
+                    "tags": [
+                        {"class": "pc", "text": "Windows应用"},
+                        {"text": "文档处理"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AGE Engine",
+                    "description": "AVG文字游戏制作引擎，提供可视化编辑界面和脚本系统，帮助开发者快速创建交互式叙事游戏。",
+                    "tags": [
+                        {"class": "pc", "text": "Windows应用"},
+                        {"text": "游戏开发"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyCMDApp",
+                    "description": "集成任意控制台应用，智能解析生成GUI，支持CLI快捷调用。让命令行工具拥有现代化操作界面，链式调用，高效管理，自由扩展。",
+                    "tags": [
+                        {"class": "pc", "text": "Windows应用"},
+                        {"text": "命令中枢"}
+                    ],
+                    "github": "#"
+                }
+            ]
+        },
+        {
+            "name": "ASTool系列",
+            "tag": "实用工具",
+            "products": [
+                {
+                    "name": "AmyExtractAudio",
+                    "description": "高效视频音频提取工具，支持多种视频格式，快速从视频文件中提取高质量音频。",
+                    "tags": [
+                        {"class": "console", "text": "控制台应用"},
+                        {"text": "音频提取"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyCompressVideo",
+                    "description": "视频压缩工具，支持多种格式的视频文件压缩，在保持画质的同时显著减小文件体积。",
+                    "tags": [
+                        {"class": "console", "text": "控制台应用"},
+                        {"text": "视频压缩"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyEasyRename",
+                    "description": "文件批量重命名工具，支持多种命名规则和正则表达式，让文件整理工作变得简单高效。",
+                    "tags": [
+                        {"class": "pc", "text": "Windows应用"},
+                        {"text": "文件管理"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyTreeDirectory",
+                    "description": "目录树生成MarkDown工具，根据指定目录扫描项目结构，提供MarkDown文本输出和下载功能。",
+                    "tags": [
+                        {"class": "console", "text": "控制台应用"},
+                        {"text": "文件管理"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyFileCollect",
+                    "description": "文件收集工具，从多层嵌套文件夹内收集文件并智能处理重名文件，支持按扩展名筛选和深度控制。",
+                    "tags": [
+                        {"class": "console", "text": "控制台应用"},
+                        {"text": "文件管理"}
+                    ],
+                    "github": "#"
+                }
+            ]
+        }
+    ]
+}

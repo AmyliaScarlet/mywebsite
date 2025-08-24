@@ -1,0 +1,94 @@
+{
+    "sectionTitle": "移动应用作品",
+    "sectionDescription": "系列安卓应用和小程序，专注于提升移动设备使用体验",
+    "series": [
+        {
+            "name": "ASTool系列应用",
+            "tag": "安卓应用/小程序",
+            "products": [
+                {
+                    "name": "AmyMelody",
+                    "description": "简洁高效的音乐播放器，支持多种音频格式，提供个性化的播放列表和音效设置，让音乐体验更愉悦。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "音乐播放"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyAlbum",
+                    "description": "高性能手机相册应用，支持快速加载和浏览大量照片，提供智能分类、加密相册和云同步功能。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "相册管理"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyTools",
+                    "description": "实用小工具集合，包含多种日常工具如单位转换、二维码生成、LED滚动字幕等，一站式解决生活小需求。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "工具集合"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyTouch",
+                    "description": "对标AppleTouch小白点的Android辅助工具，提供快速访问常用功能和快捷操作，提升设备使用效率。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "效率工具"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyBot",
+                    "description": "Android平台的自动化脚本应用，支持创建和运行自动化任务，简化重复操作，提升工作效率。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "自动化脚本"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyTravel",
+                    "description": "地图工具与旅游行程助手，提供行程规划、地点标记、路线导航和旅行笔记功能，让旅途更轻松。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"class": "android", "text": "微信小程序"},
+                        {"text": "旅行助手"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyAltimeter",
+                    "description": "经纬度海拔高度仪，利用设备传感器提供精准的高度、经纬度信息，适用于户外探险和地理测量。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "海拔测量"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyEIer",
+                    "description": "便利的APK安装器，简化APK文件安装流程，支持批量安装和版本管理，提升应用部署效率。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "APK安装"}
+                    ],
+                    "github": "#"
+                },
+                {
+                    "name": "AmyCamLink",
+                    "description": "分布式摄像头共享应用，支持在局域网内自动发现、多设备实时视频流分发与预览，助力高效远程协作与智能监控。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "视频设备"}
+                    ],
+                    "github": "#"
+                }
+            ]
+        }
+    ]
+}

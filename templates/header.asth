@@ -1,0 +1,8 @@
+<nav class="navbar">
+    <a href="#" class="logo">{{site.name}}<span>&nbsp;DEV</span></a>
+    <ul class="nav-links">
+        <li ast-for="item in nav">
+            <a href="{{item.href}}">{{item.text}}</a>
+        </li>
+    </ul>
+</nav>

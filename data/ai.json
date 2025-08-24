@@ -1,0 +1,33 @@
+{
+    "sectionTitle": "AI生态作品",
+    "sectionDescription": "AAI双子AI生态圈，探索人工智能与日常生活的融合",
+    "products": [
+        {
+            "name": "AmySmartFamily",
+            "description": "智能家居生态系统，包含Android、PC、TV、Watch和Web五端客户端，实现全面智能家居和NAS管理，配合摄像头视觉感知实现AI主动应对。",
+            "tags": [
+                {"class": "ai", "text": "智能家居"},
+                {"text": "多平台"}
+            ],
+            "github": "#"
+        },
+        {
+            "name": "AmyChatGroup",
+            "description": "多AI协同对话平台，支持多位AI参与对话，实现协同工作、社交游戏、多角度思考与角色扮演。",
+            "tags": [
+                {"class": "ai", "text": "AI聊天室"},
+                {"text": "多AI协作"}
+            ],
+            "github": "#"
+        },
+        {
+            "name": "ASTravitae",
+            "description": "依托大语言模型的AI应用，通过吸收个人生活信息构建模拟人格，实现以人格为载体的人工智能。",
+            "tags": [
+                {"class": "ai", "text": "星枢衍创"},
+                {"text": "AI人格"}
+            ],
+            "github": "#"
+        }
+    ]
+}
