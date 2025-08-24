@@ -319,8 +319,8 @@ header {
 }
 
 .tag.web {
-    background: rgba(139, 92, 246, 0.1);
-    color: var(--secondary);
+    background: rgba(69, 164, 237, 0.1);
+    color: #39baf2;
 }
 
 .card-body {

@@ -93,6 +93,16 @@
                     ],
                     "github": "#"
                 }
+                ,
+                {
+                    "name": "AmyFolderBloom",
+                    "description": "项目构建工具，将Markdown目录树快速转换为实际文件结构，简化项目初始化流程，提升团队协作效率。",
+                    "tags": [
+                        {"class": "console", "text": "控制台应用"},
+                        {"text": "文件管理"}
+                    ],
+                    "github": "#"
+                }
             ]
         }
     ]
