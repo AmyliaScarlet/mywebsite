@@ -87,6 +87,15 @@
                         {"text": "视频设备"}
                     ],
                     "github": "#"
+                },
+                {
+                    "name": "AmyTvBox",
+                    "description": "将手机转化为电视盒子，高效管理HDMI输出，Wifi、蓝牙、红外多协议遥控输入，提供沉浸式大屏体验。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "电视盒子"}
+                    ],
+                    "github": "#"
                 }
             ]
         }
