@@ -96,6 +96,15 @@
                         {"text": "电视盒子"}
                     ],
                     "github": "#"
+                },
+                {
+                    "name": "AmyTheatre",
+                    "description": "观看电视节目直播，支持灵活定制视频源，提供丰富的播放设置，提供一站式多源视听解决方案。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "电视直播"}
+                    ],
+                    "github": "#"
                 }
             ]
         }
