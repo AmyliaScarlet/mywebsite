@@ -113,6 +113,16 @@
                     ],
                     "github": "#"
                 }
+                ,
+                {
+                    "name": "AmyRecorder",
+                    "description": "简单易用的轻量级系统音视频录制工具。常驻系统托盘，可选择设备调整录制参数，操作简洁，功能专注。",
+                    "tags": [
+                        {"class": "pc", "text": "Windows应用"},
+                        {"text": "录制工具"}
+                    ],
+                    "github": "#"
+                }
             ]
         }
     ]
