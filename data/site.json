@@ -12,12 +12,13 @@
         {"href": "#mobile", "text": "移动应用"},
         {"href": "#pc", "text": "PC应用"},
         {"href": "#ai", "text": "AI生态"},
+        {"href": "#other", "text": "其他"},
         {"href": "#contact", "text": "联系我"}
     ],
     "social": [
-        {"icon": "fas fa-envelope", "href": "mailto:example@astool.dev"},
-        {"icon": "fab fa-github", "href": "#"},
-        {"icon": "fab fa-linkedin-in", "href": "#"},
-        {"icon": "fab fa-twitter", "href": "#"}
+        {"icon": "fas fa-hiking", "href": "#"},
+        {"icon": "fas fa-walking", "href": "#"},
+        {"icon": "fas fa-running", "href": "#"},
+        {"icon": "fas fa-biking", "href": "#"}
     ]
 }
