@@ -134,10 +134,45 @@ class ASTemplateEngine {
 
     // 处理ast-if指令
     processIfDirective(element, data) {
-        const conditionPath = element.getAttribute('ast-if');
+        const conditionExpression = element.getAttribute('ast-if');
         element.removeAttribute('ast-if');
         
-        const conditionValue = this.getNestedValue(data, conditionPath);
+        // 支持简单的表达式求值
+        let conditionValue = false;
+        
+        try {
+            // 创建求值上下文
+            const context = { ...data };
+            
+            // 将表达式中的变量替换为上下文中的值
+            let evalExpression = conditionExpression;
+            const variables = conditionExpression.match(/(\w+\.?\w*)/g) || [];
+            
+            variables.forEach(variable => {
+                if (variable.includes('.')) {
+                    // 处理嵌套属性
+                    const value = this.getNestedValue(data, variable);
+                    if (value !== undefined) {
+                        evalExpression = evalExpression.replace(
+                            new RegExp(`\\b${variable}\\b`, 'g'), 
+                            JSON.stringify(value)
+                        );
+                    }
+                } else if (data[variable] !== undefined) {
+                    // 处理简单属性
+                    evalExpression = evalExpression.replace(
+                        new RegExp(`\\b${variable}\\b`, 'g'), 
+                        JSON.stringify(data[variable])
+                    );
+                }
+            });
+            
+            // 安全地求值
+            conditionValue = (new Function('return ' + evalExpression))();
+        } catch (error) {
+            console.error('Error evaluating ast-if expression:', error);
+            conditionValue = false;
+        }
         
         if (!conditionValue) {
             element.parentNode.removeChild(element);
@@ -188,6 +223,8 @@ class ASTemplateEngine {
         await this.render('pc', 'pc', '#pc-content');
         
         await this.render('ai', 'ai', '#ai-content');
+
+        await this.render('other', 'other', '#other-content');
         await this.render('footer', 'site', 'footer .container');
         
         // 初始化页面交互

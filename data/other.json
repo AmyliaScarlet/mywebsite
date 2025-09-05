@@ -1,0 +1,71 @@
+{
+    "sectionTitle": "其他作品",
+    "sectionDescription": "一些有意思的小项目",
+    "products": [
+        {
+            "name": "CupGame",
+            "description": "水杯倒水游戏：挑战你的逻辑思维，通过巧妙操作多个不同容量的杯子，将水倒来倒去，最终达成目标水量。",
+            "tags": [
+                {"class": "other", "text": "算法"},
+                {"text": "游戏生成"}
+            ],
+            "github": "#"
+        },
+        {
+            "name": "LuckyBingo",
+            "description": "宾果游戏，玩家通过抽取来获得数字，并尝试在宾果板上完成一行、一列或对角线，以赢得游戏。可以接入积分商城小游戏等。",
+            "tags": [
+                {"class": "other", "text": "概率"},
+                {"text": "运营活动"}
+            ],
+            "github": "#"
+        },
+        {
+            "name": "SecretRoomEscape",
+            "description": "原片《程序员密室逃生事件》的解法。故事讲述了100人被困在密室，只有通过基于灯泡的规则寻找逃生的机会。故事趣味的展示了一些逻辑思考。",
+            "tags": [
+                {"class": "other", "text": "逻辑"},
+                {"text": "事件模拟"}
+            ],
+            "github": "https://www.bilibili.com/video/BV12x411k7kg/"
+        },
+        {
+            "name": "IECS",
+            "description": "让浏览器像Windows原生桌面一样操作的网站，模仿实现了Windows的桌面、任务栏、右键、开始菜单、窗口管理等功能。",
+            "tags": [
+                {"class": "other", "text": "桌面"},
+                {"text": "应用"}
+            ],
+            "github": "#"
+        }
+        ,
+        {
+            "name": "AgentServer",
+            "description": "轻量级的代理服务器，方便自定义规则用于一些对自部署服务的请求转发、通路调试。",
+            "tags": [
+                {"class": "other", "text": "服务器"},
+                {"text": "应用"}
+            ],
+            "github": "#"
+        },
+        {
+            "name": "MatrixCal",
+            "description": "矩阵计算工具，支持矩阵的运算、求逆、秩与行列式等判断操作。",
+            "tags": [
+                {"class": "other", "text": "计算"},
+                {"text": "应用"}
+            ],
+            "github": "#"
+        }
+        ,
+        {
+            "name": "TokenBucket",
+            "description": "令牌桶限流实现,支持流量控制、熔断降级和预热机制，可有效保障系统稳定性与高可用性。",
+            "tags": [
+                {"class": "other", "text": "算法"},
+                {"text": "中间件"}
+            ],
+            "github": "#"
+        }
+    ]
+}

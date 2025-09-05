@@ -313,6 +313,11 @@ header {
     color: #ec4899;
 }
 
+.tag.other {
+    background: rgb(220 236 72 / 0.1);
+    color: #d0b950;
+}
+
 .tag.console {
     background: rgba(107, 114, 128, 0.1);
     color: #4b5563;
