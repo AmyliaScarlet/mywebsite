@@ -4,6 +4,7 @@ class ASTemplateEngine {
         this.loader = new ResourceLoader();
         this.templateCache = new Map();
         this.dataCache = new Map();
+        this.renderMode = 'parallel';
     }
 
     // 编译模板
@@ -213,24 +214,43 @@ class ASTemplateEngine {
     }
 
     // 初始化页面
-    async initPage() {
-        // 渲染各个部分
-        await this.render('header', 'site', 'header .container');
-        await this.render('hero', 'site', '.hero .container');
-        
-        // 修正移动应用和PC应用的渲染目标
-        await this.render('mobile', 'mobile', '#mobile-content');
-        await this.render('pc', 'pc', '#pc-content');
-        
-        await this.render('ai', 'ai', '#ai-content');
-
-        await this.render('other', 'other', '#other-content');
-        await this.render('footer', 'site', 'footer .container');
-        
-        // 初始化页面交互
-        this.initInteractions();
+    async initPage(renderConfigs = []) {
+        try {
+            // 支持并行或串行渲染
+            // serial 或 parallel
+            if (this.renderMode === 'parallel') {
+                // 并行渲染（更快但可能占用更多资源）
+                await Promise.all(renderConfigs.map(config => 
+                    this.render(config.templateName, config.moduleName, config.containerSelector)
+                ));
+            } else {
+                // 串行渲染（默认，更稳定）
+                for (const config of renderConfigs) {
+                    try {
+                        await this.render(
+                            config.templateName, 
+                            config.moduleName, 
+                            config.containerSelector,
+                            config.renderOptions // 可选的额外参数
+                        );
+                    } catch (error) {
+                        console.error(`渲染 ${config.templateName} 失败:`, error);
+                        // 可选择是否继续渲染其他模块
+                        if (config.critical) {
+                            throw error;
+                        }
+                    }
+                }
+            }
+            
+            // 初始化页面交互
+            this.initInteractions();
+            
+        } catch (error) {
+            console.error('页面初始化失败:', error);
+            throw error;
+        }
     }
-
     // 初始化页面交互
     initInteractions() {
         // 平滑滚动效果
