@@ -105,6 +105,15 @@
                         {"text": "电视直播"}
                     ],
                     "github": "#"
+                },
+                {
+                    "name": "AmySmartEyes",
+                    "description": "在原生相机基础上集成多种AI视觉功能，如实时场景识别、运动检测等。",
+                    "tags": [
+                        {"class": "android", "text": "Android应用"},
+                        {"text": "视觉识别"}
+                    ],
+                    "github": "#"
                 }
             ]
         }
